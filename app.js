@@ -16,7 +16,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL || "*";
 // Middlewares
 app.use(
   cors({
-    origin: ["http://localhost:5173", FRONTEND_URL],
+    origin: [FRONTEND_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
